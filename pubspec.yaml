@@ -1,0 +1,26 @@
+name: imingle
+description: IMingle Clone by Nono
+publish_to: "none"
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  firebase_core: ^2.25.0
+  firebase_auth: ^4.17.0
+  firebase_database: ^10.4.0
+
+  camera: ^0.10.5
+  flutter_webrtc: ^0.9.35
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
