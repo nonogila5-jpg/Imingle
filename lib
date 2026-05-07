@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+// استدعاء الصفحات
+import 'pages/login_page.dart';
+import 'pages/home_page.dart';
+import 'pages/chat_page.dart';
+import 'pages/video_page.dart';
+import 'pages/gifts_page.dart';
+import 'pages/profile_page.dart';
+import 'pages/settings_page.dart';
+import 'pages/vip_page.dart';
+import 'pages/live_page.dart';
+
+void main() {
+  runApp(const IMingleApp());
+}
+
+class IMingleApp extends StatelessWidget {
+  const IMingleApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'IMingle Clone',
+      theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
+      routes: {
+        "/login": (context) => const LoginPage(),
+        "/home": (context) => const HomePage(),
+        "/chat": (context) => const ChatPage(),
+        "/video": (context) => const VideoPage(),
+        "/gifts": (context) => const GiftsPage(),
+        "/profile": (context) => const ProfilePage(),
+        "/settings": (context) => const SettingsPage(),
+        "/vip": (context) => const VipPage(),
+        "/live": (context) => const LivePage(),
+      },
+      initialRoute: "/login",
+    );
+  }
+}
